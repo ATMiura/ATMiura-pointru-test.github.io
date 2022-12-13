@@ -1,0 +1,39 @@
+@import "../variables";
+@import '../typography';
+
+.nav {
+  &-list {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: 1300px) {
+      gap: 35px;
+    }
+    @media (max-width: 1199px) {
+      gap: 20px;
+    }
+    @media (max-width: 575px) {
+      gap: 30px;
+    }
+  }
+  &-item {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &-link {
+    padding: 0;
+    color: var(--c-text);
+    white-space: nowrap;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--с-primary);
+      text-decoration: underline;
+    }
+  }
+}

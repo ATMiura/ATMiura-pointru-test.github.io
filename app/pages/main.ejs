@@ -1,0 +1,83 @@
+<% const data = {
+    'title': 'Главная',
+    'flowContainerClass': 'flow-container--main'
+} %>
+
+<%- require("../layouts/header.ejs")(data) %>
+
+<section class="section-slider section-slider-main">
+    <div id="sliderMain" class="slider-main swiper-slider">
+        <div class="swiper-container slider-main__top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider-main-slide">
+                    <div class="slider-main-slide__inner">
+                        <picture class="slider-main-slide__picture" style="background-image: url('../images/content/slider-main-img-1.jpg')">
+                            <img src="../images/content/slider-main-img-mobile.jpg" class="slider-main-slide__image" alt="">
+                        </picture>
+                        <div class="container slider-main-slide__content" data-swiper-parallax="-50">
+                            <div class="slider-main-slide__title">«На антресолях…»</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slider-main-slide">
+                    <div class="slider-main-slide__inner">
+                        <picture class="slider-main-slide__picture" style="background-image: url('../images/content/slider-main-img-2.jpg')">
+                            <img src="../images/content/slider-main-img-mobile.jpg" class="slider-main-slide__image" alt="">
+                        </picture>
+                        <div class="container slider-main-slide__content" data-swiper-parallax="-50">
+                            <div class="slider-main-slide__title">Картинная галерея</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container swiper-pagination"></div>
+            <div class="swiper-button-container">
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-button swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="container slider-main__elements">
+            <div class="slider-main__thumbs">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-main-slide__description">
+                                <div class="slider-main-slide-text">
+                                    Тема постоянной экспозиции – жизнь и творчество Александра Вампилова, выдающегося
+                                    драматурга.
+                                    Более 120 экспонатов: личные вещи Вампилова, предметы, связанные с эпохой 1960-х, а
+                                    также с историей театра и Иркутска.
+                                </div>
+                                <a href="#" class="button button--light slider-main-slide__button">подробнее →</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-main-slide__description">
+                                <div class="slider-main-slide-text">
+                                    Включает актуальные течения ХХ и XXI века.
+                                    Художественная коллекция содержит более 200 работ: живопись, графика и
+                                    декоративно-прикладное искусство. Формируется с 1996 года.
+                                    <a href="#">подробнее →</a>
+                                </div>
+                                <a href="#" class="button button--light slider-main-slide__button">подробнее →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-main-ticket">
+                <div class="slider-main-ticket__inner">
+                    <div class="slider-main-ticket__text">
+                        <div class="slider-main-slide-text__inner">
+                            С любовью рассказываем об Александре Вампилове и искусстве. Проводим творческие
+                            встречи, организуем спектакли, выставки
+                        </div>
+                    </div>
+                    <a href="#" class="button button--primary slider-main-slide__button">купить билеты →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- require("../layouts/footer.ejs")() %>

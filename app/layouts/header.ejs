@@ -1,0 +1,60 @@
+<!-- (c) Digital Element || http://www.d-element.ru/ -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=61536017-f4a7-4aaf-a708-fa73ef88c02d&amp;lang=ru_RU"
+            type="text/javascript"></script>
+</head>
+<body>
+<div class="flow-container <%= flowContainerClass && flowContainerClass %>">
+
+    <div class="content">
+        <%- require('./mobile-menu.ejs')() %>
+
+        <div class="content-wrapper">
+            <header class="header">
+                <div class="header-main">
+                    <div class="container header-main__container">
+                        <div class="header__mobile" data-mobile="header-mobile">
+                            <div class="burger js-burger">
+                                <svg class="i-icon i-burger">
+                                    <use xlink:href="#i-burger"></use>
+                                </svg>
+                            </div>
+                            <div class="header__phone">
+                                <a href="tel:123" class="phone">
+                                    <svg class="i-icon i-phone">
+                                        <use xlink:href="#i-phone"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="header__language">
+                            <%- require("../components/elements/language.ejs")() %>
+                        </div>
+                        <div class="header__logo" data-mobile="header-blind">
+                            <%- require("../components/elements/logo.ejs")() %>
+                        </div>
+                        <div class="header__content">
+                            <div class="header__socials">
+                                <%- require("../components/elements/socials.ejs")() %>
+                            </div>
+                            <div class="header__blind" data-desktop="header-blind">
+                                <%- require("../components/elements/blind.ejs")() %>
+                            </div>
+                            <div class="header__nav" data-desktop="header-nav">
+                                <%- require("../components/elements/nav.ejs")() %>
+                            </div>
+                            <div class="header__search" data-desktop="header-search">
+                                <%- require("../components/elements/search.ejs")() %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+

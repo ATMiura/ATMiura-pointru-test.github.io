@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Bitter";
+  src: url("../fonts/Bitter/Bitter-Regular.ttf") format("truetype"), url("../fonts/Bitter/Bitter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bitter";
+  src: url("../fonts/Bitter/Bitter-Medium.ttf") format("truetype"), url("../fonts/Bitter/Bitter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bitter";
+  src: url("../fonts/Bitter/Bitter-SemiBold.ttf") format("truetype"), url("../fonts/Bitter/Bitter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bitter";
+  src: url("../fonts/Bitter/Bitter-Bold.ttf") format("truetype"), url("../fonts/Bitter/Bitter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=fonts.css.map */

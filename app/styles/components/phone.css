@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@custom-media --mobile-xs (max-width: 480px);
+@custom-media --mobile-s (max-width: 650px);
+@custom-media --mobile (max-width: 800px);
+@custom-media --mobile-above (min-width: 751px);
+@custom-media --tablet-below (max-width: 900px);
+@custom-media --tablet (max-width: 1000px);
+@custom-media --tablet-above (max-width: 1280px);
+@custom-media --desktop (min-width: 1367px) and (max-width: 1920px);
+@custom-media --desktop-below (max-width: 1365px);
+@custom-media --desktop-above (max-width: 1439px);
+@custom-media --container-below (max-width: 1440px);
+@custom-media --full (width: 1920px);
+@custom-media --full-below (max-width: 1919px);
+@custom-media --height-700 (min-height: 700px);
+@custom-media --height-900 (min-height: 900px);
+@custom-media --height-1000 (min-height: 1000px);
+:root {
+  --c-black: black;
+  --c-white: white;
+  --с-primary: #C56C1A;
+  --c-brown: #746B60;
+  --c-bg: #EAE3D3;
+  --c-white-light: #F7F3EA;
+  --c-dark-light: #746B60;
+  --c-text: #2A2926;
+}
+
+.phone {
+  color: var(--c-black);
+}
+.phone__link {
+  font-size: 18px;
+  line-height: 22px;
+  color: inherit;
+}
+.phone__link:hover {
+  color: var(--c-violet);
+}
+.phone__text {
+  margin-top: -3px;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=phone.css.map */

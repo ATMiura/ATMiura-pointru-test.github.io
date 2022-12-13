@@ -1,0 +1,12 @@
+@import "media.scss";
+
+@mixin counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 21px;
+  min-width: 21px;
+  border-radius: 10px;
+  background: var(--c-violet);
+}

@@ -1,0 +1,56 @@
+@import "../variables";
+
+.language {
+  display: flex;
+
+  &-item {
+    $item: &;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 52px;
+      height: 32px;
+
+      font-size: 14px;
+      line-height: 1.5;
+
+      color: var(--c-white);
+      text-align: center;
+      text-decoration: none;
+
+      letter-spacing: -0.02em;
+      background: var(--c-brown);
+
+      @media (max-width: 575px) {
+        width: 78.5px;
+        height: 42px;
+      }
+
+      &:hover {
+        color: var(--c-black);
+        text-decoration: none;
+        background: var(--c-white);
+      }
+    }
+
+    &.active {
+      #{$item}__link {
+        color: var(--c-black);
+        background: var(--c-white);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 9px;
+        height: 8px;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8.73335L9.28571 0.127716H0V8.73335Z' fill='white'/%3E%3C/svg%3E%0A");
+      }
+    }
+  }
+}

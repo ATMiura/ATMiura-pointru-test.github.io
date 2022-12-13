@@ -1,0 +1,47 @@
+
+.swiper {
+  &-button {
+    position: initial;
+    width: 26px;
+    height: 30px;
+    margin: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='31' viewBox='0 0 27 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15.1554L26.25 0V30.3109L0 15.1554Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+
+    @media (max-width: 575px) {
+      width: 15px;
+      height: 16px;
+    }
+
+    &-container {
+      position: absolute;
+      top: 75%;
+      left: 0;
+      right: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      max-width: 1517px;
+      margin: 0 auto;
+
+      @media (max-width: 575px) {
+        top: 69%;
+      }
+    }
+
+    &-prev {
+      @media (max-width: 1300px) {
+        margin-left: 10px;
+      }
+    }
+    &-next {
+      transform: rotate(180deg);
+
+      @media (max-width: 1300px) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

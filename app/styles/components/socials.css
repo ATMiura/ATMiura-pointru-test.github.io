@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
+.socials-item__link {
+  display: block;
+}
+@media (max-width: 575px) {
+  .socials {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .socials-item {
+    order: 2;
+  }
+  .socials-item:nth-child(1) {
+    order: 1;
+  }
+  .socials-item:nth-child(2) {
+    order: 0;
+  }
+}
+
+/*# sourceMappingURL=socials.css.map */

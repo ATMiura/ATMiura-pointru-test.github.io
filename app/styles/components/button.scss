@@ -1,0 +1,45 @@
+@import "../variables";
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  border-radius: 0;
+  outline: none;
+
+  font-size: 16px;
+  line-height: 52px;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--light {
+    padding: 5px 40px;
+
+    font-weight: 500;
+    color: var(--с-primary);
+
+    background: var(--c-white-light);
+  }
+
+  &--primary {
+    padding: 5px 44px;
+
+    font-weight: 700;
+    color: var(--c-white);
+
+    border: 1px solid var(--с-primary);
+    background: var(--с-primary);
+
+    &:hover,
+    &:active {
+      color: var(--с-primary);
+      background: var(--c-bg);
+    }
+    &:active {
+      border-width: 2px;
+    }
+  }
+}

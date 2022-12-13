@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@custom-media --mobile-xs (max-width: 480px);
+@custom-media --mobile-s (max-width: 650px);
+@custom-media --mobile (max-width: 800px);
+@custom-media --mobile-above (min-width: 751px);
+@custom-media --tablet-below (max-width: 900px);
+@custom-media --tablet (max-width: 1000px);
+@custom-media --tablet-above (max-width: 1280px);
+@custom-media --desktop (min-width: 1367px) and (max-width: 1920px);
+@custom-media --desktop-below (max-width: 1365px);
+@custom-media --desktop-above (max-width: 1439px);
+@custom-media --container-below (max-width: 1440px);
+@custom-media --full (width: 1920px);
+@custom-media --full-below (max-width: 1919px);
+@custom-media --height-700 (min-height: 700px);
+@custom-media --height-900 (min-height: 900px);
+@custom-media --height-1000 (min-height: 1000px);
+:root {
+  --c-black: black;
+  --c-white: white;
+  --с-primary: #C56C1A;
+  --c-brown: #746B60;
+  --c-bg: #EAE3D3;
+  --c-white-light: #F7F3EA;
+  --c-dark-light: #746B60;
+  --c-text: #2A2926;
+}
+
+.language {
+  display: flex;
+}
+.language-item__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--c-white);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  background: var(--c-brown);
+}
+@media (max-width: 575px) {
+  .language-item__link {
+    width: 78.5px;
+    height: 42px;
+  }
+}
+.language-item__link:hover {
+  color: var(--c-black);
+  text-decoration: none;
+  background: var(--c-white);
+}
+.language-item.active .language-item__link {
+  color: var(--c-black);
+  background: var(--c-white);
+}
+.language-item.active::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8.73335L9.28571 0.127716H0V8.73335Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+/*# sourceMappingURL=language.css.map */

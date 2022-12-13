@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@custom-media --mobile-xs (max-width: 480px);
+@custom-media --mobile-s (max-width: 650px);
+@custom-media --mobile (max-width: 800px);
+@custom-media --mobile-above (min-width: 751px);
+@custom-media --tablet-below (max-width: 900px);
+@custom-media --tablet (max-width: 1000px);
+@custom-media --tablet-above (max-width: 1280px);
+@custom-media --desktop (min-width: 1367px) and (max-width: 1920px);
+@custom-media --desktop-below (max-width: 1365px);
+@custom-media --desktop-above (max-width: 1439px);
+@custom-media --container-below (max-width: 1440px);
+@custom-media --full (width: 1920px);
+@custom-media --full-below (max-width: 1919px);
+@custom-media --height-700 (min-height: 700px);
+@custom-media --height-900 (min-height: 900px);
+@custom-media --height-1000 (min-height: 1000px);
+:root {
+  --c-black: black;
+  --c-white: white;
+  --с-primary: #C56C1A;
+  --c-brown: #746B60;
+  --c-bg: #EAE3D3;
+  --c-white-light: #F7F3EA;
+  --c-dark-light: #746B60;
+  --c-text: #2A2926;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdown-toggle:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 9px;
+  margin-left: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='9' viewBox='0 0 11 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.85464 0.5H9.15513L5.00488 7.97044L0.85464 0.5Z' stroke='%235A5751'/%3E%3C/svg%3E%0A");
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+  margin-top: 19px;
+  transition: 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+.dropdown-list__inner {
+  list-style: none;
+  padding: 24px 21px 21px 19px;
+  margin: 0;
+  background: var(--c-white);
+}
+.dropdown-list::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L23 23H0V0Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.dropdown-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.dropdown-item__link {
+  display: block;
+  padding: 5px 16px 7px;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--c-black);
+  text-decoration: none;
+  text-transform: initial;
+}
+.dropdown-item__link:hover {
+  color: var(--c-white);
+  background: var(--с-primary);
+}
+.dropdown.open .dropdown-toggle {
+  color: var(--с-primary);
+  text-decoration: underline;
+}
+.dropdown.open .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=dropdown.css.map */

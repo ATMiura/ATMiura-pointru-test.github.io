@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@custom-media --mobile-xs (max-width: 480px);
+@custom-media --mobile-s (max-width: 650px);
+@custom-media --mobile (max-width: 800px);
+@custom-media --mobile-above (min-width: 751px);
+@custom-media --tablet-below (max-width: 900px);
+@custom-media --tablet (max-width: 1000px);
+@custom-media --tablet-above (max-width: 1280px);
+@custom-media --desktop (min-width: 1367px) and (max-width: 1920px);
+@custom-media --desktop-below (max-width: 1365px);
+@custom-media --desktop-above (max-width: 1439px);
+@custom-media --container-below (max-width: 1440px);
+@custom-media --full (width: 1920px);
+@custom-media --full-below (max-width: 1919px);
+@custom-media --height-700 (min-height: 700px);
+@custom-media --height-900 (min-height: 900px);
+@custom-media --height-1000 (min-height: 1000px);
+:root {
+  --c-black: black;
+  --c-white: white;
+  --с-primary: #C56C1A;
+  --c-brown: #746B60;
+  --c-bg: #EAE3D3;
+  --c-white-light: #F7F3EA;
+  --c-dark-light: #746B60;
+  --c-text: #2A2926;
+}
+
+.header {
+  padding-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .header {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 41px;
+  }
+}
+.header-main__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .header-main__container {
+    position: relative;
+    padding-top: 97px;
+    flex-wrap: nowrap;
+  }
+}
+.header__content {
+  display: flex;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .header__content {
+    flex: 1 1;
+  }
+}
+@media (min-width: 992px) {
+  .header__blind {
+    margin-top: 3px;
+    margin-left: auto;
+  }
+}
+.header__logo {
+  margin-right: 116px;
+  padding-top: 11px;
+  max-width: 275px;
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .header__logo {
+    margin-right: 60px;
+    padding-top: 0;
+    max-width: 240px;
+  }
+}
+@media (max-width: 1199px) {
+  .header__logo {
+    margin-right: 41px;
+    max-width: 235px;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo .logo {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 359px) {
+  .header__logo {
+    margin-right: 0;
+    max-width: 220px;
+  }
+}
+@media (max-width: 359px) {
+  .header__socials {
+    margin-left: auto;
+  }
+}
+.header__language {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+@media (max-width: 991px) {
+  .header__language {
+    left: initial;
+    right: 0;
+  }
+}
+.header__search {
+  margin-left: auto;
+}
+@media (max-width: 991px) {
+  .header__search {
+    order: 1;
+  }
+}
+.header__mobile {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  max-width: 100%;
+  flex: 0 0 100%;
+  margin-bottom: 54px;
+  padding-left: 8px;
+}
+@media (min-width: 992px) {
+  .header__mobile {
+    display: none;
+  }
+}
+.header .burger {
+  order: 0;
+}
+.header__phone {
+  order: 2;
+}
+
+/*# sourceMappingURL=header.css.map */

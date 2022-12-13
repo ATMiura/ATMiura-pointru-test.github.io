@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@custom-media --mobile-xs (max-width: 480px);
+@custom-media --mobile-s (max-width: 650px);
+@custom-media --mobile (max-width: 800px);
+@custom-media --mobile-above (min-width: 751px);
+@custom-media --tablet-below (max-width: 900px);
+@custom-media --tablet (max-width: 1000px);
+@custom-media --tablet-above (max-width: 1280px);
+@custom-media --desktop (min-width: 1367px) and (max-width: 1920px);
+@custom-media --desktop-below (max-width: 1365px);
+@custom-media --desktop-above (max-width: 1439px);
+@custom-media --container-below (max-width: 1440px);
+@custom-media --full (width: 1920px);
+@custom-media --full-below (max-width: 1919px);
+@custom-media --height-700 (min-height: 700px);
+@custom-media --height-900 (min-height: 900px);
+@custom-media --height-1000 (min-height: 1000px);
+:root {
+  --c-black: black;
+  --c-white: white;
+  --с-primary: #C56C1A;
+  --c-brown: #746B60;
+  --c-bg: #EAE3D3;
+  --c-white-light: #F7F3EA;
+  --c-dark-light: #746B60;
+  --c-text: #2A2926;
+}
+
+.blind {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--c-text);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.blind:hover {
+  color: var(--с-primary);
+}
+.blind:hover .i-icon {
+  fill: var(--с-primary);
+}
+.blind__icon {
+  margin-right: 16px;
+}
+@media (max-width: 767px) {
+  .blind {
+    color: var(--c-dark-light);
+  }
+  .blind .i-icon {
+    width: 43px;
+    height: auto;
+    fill: var(--c-dark-light);
+  }
+}
+
+/*# sourceMappingURL=blind.css.map */

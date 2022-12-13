@@ -1,0 +1,38 @@
+@import "../variables";
+
+.blind {
+  $blind: &;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--c-text);
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--с-primary);
+
+    .i-icon {
+      fill: var(--с-primary);
+    }
+  }
+
+  &__icon {
+    margin-right: 16px;
+  }
+
+  @media (max-width: 767px) {
+    color: var(--c-dark-light);
+
+    .i-icon {
+      width: 43px;
+      height: auto;
+      fill: var(--c-dark-light);
+    }
+  }
+}
